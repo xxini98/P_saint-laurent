@@ -363,7 +363,7 @@ legend {
   display: inline-block;
   width: 255px;
   height: 25px;
-  background: url(/images/comm/white/logo-svg.svg) no-repeat 0 0;
+  background: url(../../images/comm/white/logo-svg.svg) no-repeat 0 0;
   background-size: cover;
   text-indent: -99999px;
 }
@@ -387,7 +387,7 @@ legend {
   display: inline-block;
   width: 255px;
   height: 25px;
-  background: url(/images/comm/black/logo-svg.svg) no-repeat 0 0;
+  background: url(../../images/comm/black/logo-svg.svg) no-repeat 0 0;
   background-size: cover;
   text-indent: -99999px;
 }
