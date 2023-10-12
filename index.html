@@ -28,6 +28,7 @@
     />
     <meta name="twitter:domain" content="사이트 명" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- font-awesome / 구글 아이콘 / line-awesome / robote,Baskerville / swiper  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -42,10 +43,6 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
     />
     <link
@@ -57,6 +54,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./dist/css/comm.css" />
+    <!-- gsap,scrolltrigger / jquery / swiper / sticky-sidebar , include -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="./dist/js/sticky-sidebar.js"></script>
@@ -71,73 +71,74 @@
     </div>
     <div class="wrap bg_b">
       <header id="header">
-        <div class="sidebar">
-          <div class="sidebar__inner head_inner">
-            <div class="head-rap">
-              <h1 id="logo">
-                <a href="/index.html">logo</a>
-              </h1>
-              <div id="tnb">
-                <ul class="tnb-wrap">
-                  <!-- <li class="tnb_li">
+        <div class="head_inner">
+          <div class="head-rap">
+            <h1 id="logo">
+              <a href="/index.html">logo</a>
+            </h1>
+            <div id="tnb">
+              <ul class="tnb-wrap">
+                <!-- <li class="tnb_li">
                       <a href="#">EN</a>
                     </li> -->
-                  <li class="tnb_li">
-                    <a href="#">LOGIN</a>
+                <li class="tnb_li">
+                  <a href="#">LOGIN</a>
+                </li>
+                <li class="tnb_li">
+                  <a href="#">CART</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <nav id="gnb" class="sidebar">
+          <div class="sidebar__inner">
+            <ul class="depth1">
+              <li class="link-depth1">
+                <a href="#">SHOP</a>
+                <ul class="depth2">
+                  <li>
+                    <a href="#">SHOP</a>
                   </li>
-                  <li class="tnb_li">
-                    <a href="#">CART</a>
+                  <li>
+                    <a href="#">SHOP</a>
+                  </li>
+                  <li>
+                    <a href="#">SHOP</a>
                   </li>
                 </ul>
-              </div>
-            </div>
-            <nav id="gnb">
-              <ul class="depth1">
-                <li class="link-depth1">
-                  <a href="#">SHOP</a>
-                  <ul class="depth2">
-                    <li>
-                      <a href="#">SHOP</a>
-                    </li>
-                    <li>
-                      <a href="#">SHOP</a>
-                    </li>
-                    <li>
-                      <a href="#">SHOP</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="link-depth1">
-                  <a href="#">COLLECTION</a>
-                  <ul class="depth2">
-                    <li>
-                      <a href="#">COLLECTION</a>
-                    </li>
-                    <li>
-                      <a href="#">COLLECTION</a>
-                    </li>
-                    <li>
-                      <a href="#">COLLECTION</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="link-depth1">
-                  <a href="#">INTRODUCE</a>
-                  <ul class="depth2">
-                    <li>
-                      <a href="#">INTRODUCE</a>
-                    </li>
-                    <li>
-                      <a href="#">INTRODUCE</a>
-                    </li>
-                    <li>
-                      <a href="#">INTRODUCE</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="link-depth1">
-                  <a href="#">SEARCH</a>
-                  <!-- <ul class="depth2">
+              </li>
+              <li class="link-depth1">
+                <a href="#">COLLECTION</a>
+                <ul class="depth2">
+                  <li>
+                    <a href="#">COLLECTION</a>
+                  </li>
+                  <li>
+                    <a href="#">COLLECTION</a>
+                  </li>
+                  <li>
+                    <a href="#">COLLECTION</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="link-depth1">
+                <a href="#">INTRODUCE</a>
+                <ul class="depth2">
+                  <li>
+                    <a href="#">INTRODUCE</a>
+                  </li>
+                  <li>
+                    <a href="#">INTRODUCE</a>
+                  </li>
+                  <li>
+                    <a href="#">INTRODUCE</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="link-depth1">
+                <a href="#">SEARCH</a>
+                <!-- <ul class="depth2">
                     <li>
                       <a href="#">SEARCH</a>
                     </li>
@@ -148,11 +149,10 @@
                       <a href="#">SEARCH</a>
                     </li>
                   </ul> -->
-                </li>
-              </ul>
-            </nav>
+              </li>
+            </ul>
           </div>
-        </div>
+        </nav>
       </header>
       <main id="main" class="container">
         <div class="lorem">
@@ -164,7 +164,13 @@
           >
         </div>
       </main>
-      <footer data-include-path="./outline/footer_bg-b.html"></footer>
     </div>
+    <footer data-include-path="./outline/footer_bg-b.html"></footer>
   </body>
+
+  <script>
+
+
+
+  </script>
 </html>
