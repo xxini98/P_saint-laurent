@@ -60,6 +60,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="./dist/js/sticky-sidebar.js"></script>
+    <script src="dist/js/youtube.js"></script>
     <script src="./dist/js/include.js"></script>
     <script defer src="./dist/js/comm.js"></script>
   </head>
@@ -155,22 +156,119 @@
         </nav>
       </header>
       <main id="main" class="container">
-        <div class="lorem">
-          <span
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fuga
-            ea laudantium dolorem quaerat facere minus aliquam doloremque
-            voluptates atque porro aspernatur iusto dolores obcaecati aut
-            exercitationem, qui minima tempore!</span
-          >
-        </div>
+        <section class="cont-main section-intro">
+          <img
+            class="main-img"
+            src="./images/main/main.jpg"
+            alt="메인 페이지"
+          />
+        </section>
+        <section class="container part-sec">
+          <div class="part-g part-one">
+            <li class="women">
+              <a href="./goods-women.html">
+                <img src="./images/main/part1.jpg" alt="WOMEN" />
+              </a>
+            </li>
+          </div>
+          <div class="part-g part-two">
+            <li class="man">
+              <a href="#">
+                <img src="./images/main/part2.jpg" alt="MAN" />
+              </a>
+            </li>
+          </div>
+          <div class="part-g part-one">
+            <li class="accessory">
+              <a href="#">
+                <img src="./images/main/part3.jpg" alt="ACCESSORY" />
+              </a>
+            </li>
+          </div>
+          <div class="part-g part-two">
+            <li class="introduce">
+              <a href="./introduce.html">
+                <img src="./images/main/part4.jpg" alt="INTRODUCE" />
+              </a>
+            </li>
+          </div>
+        </section>
+        <section class="youtube">
+          <div class="youtube__area">
+            <div id="player"></div>
+          </div>
+          <div class="youtube__cover"></div>
+        </section>
+        <section id="swiper">
+          <div class="swiper-bnr">
+            <h2>FASHIONSHOW</h2>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/main/slide/RUNWAY_01.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/main/slide/RUNWAY_02.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/main/slide/RUNWAY_03.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/main/slide/RUNWAY_04.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/main/slide/RUNWAY_05.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/main/slide/RUNWAY_06.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/main/slide/RUNWAY_07.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="show">
+            <a href="#">
+              <p class="slide-b">VIEW SHOW</p>
+            </a>
+          </div>
+        </section>
+        <section class="running">
+          <div class="runningtext-box">
+            <div class="running-text">
+              <h3>
+                SAINT LAURENT SAINT LAURENT SAINT LAURENT SAINT LAURENT SAINT
+                LAURENT SAINT LAURENT SAINT LAURENT&nbsp;
+              </h3>
+            </div>
+            <div class="running-text">
+              <h3>
+                SAINT LAURENT SAINT LAURENT SAINT LAURENT SAINT LAURENT SAINT
+                LAURENT SAINT LAURENT SAINT LAURENT&nbsp;
+              </h3>
+            </div>
+            <div class="running-text">
+              <h3>
+                SAINT LAURENT SAINT LAURENT SAINT LAURENT SAINT LAURENT SAINT
+                LAURENT SAINT LAURENT SAINT LAURENT&nbsp;
+              </h3>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
     <footer data-include-path="./outline/footer_bg-b.html"></footer>
   </body>
-
   <script>
-
-
-
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
   </script>
 </html>
