@@ -24,7 +24,10 @@
   font-style: normal;
   font-weight: 400;
   src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
 /* reset */
 body,
@@ -118,15 +121,15 @@ body {
 }
 
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
-input[type=text],
-input[type=password],
-input[type=submit],
-input[type=search] {
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="search"] {
   -webkit-appearance: none;
   border-radius: 0;
 }
 
-input:checked[type=checkbox] {
+input:checked[type="checkbox"] {
   background-color: #666;
   -webkit-appearance: checkbox;
 }
@@ -136,15 +139,15 @@ button {
   border-radius: 0;
 }
 
-input[type=button],
-input[type=submit],
-input[type=reset],
-input[type=file] {
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"] {
   -webkit-appearance: button;
   border-radius: 0;
 }
 
-input[type=search]::-webkit-search-cancel-button {
+input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
@@ -154,7 +157,8 @@ body {
   background: #fff;
   font-size: 15px;
   line-height: 1.5;
-  font-family: "Roboto", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-family: "Roboto", "Noto Sans KR", "Malgun Gothic", "맑은 고딕",
+    sans-serif;
 }
 
 /* desktop */
@@ -184,7 +188,7 @@ hr {
   display: none;
 }
 
-input[type=password] {
+input[type="password"] {
   font-family: "Malgun Gothic";
 }
 
@@ -297,10 +301,238 @@ legend {
 
 #main {
   width: 100%;
-  height: 300vh;
+  height: 590vh;
 }
-#main .lorem {
-  font-size: 10px;
+
+#main .cont-main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+#main .cont-main img {
+  position: absolute;
+  top: -153px;
+  left: -122px;
+}
+#main .part-sec {
+  padding-top: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#main .part-sec .women {
+  position: relative;
+}
+#main .part-sec .women::after {
+  display: none;
+  position: absolute;
+  content: "";
+  top: 0%;
+  left: 0%;
+  right: 50%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background-color: #fff;
+}
+#main .part-sec .women:hover::after {
+  display: block;
+  content: "WOMEN";
+  color: #000;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+#main .part-sec .man {
+  position: relative;
+}
+#main .part-sec .man::after {
+  display: none;
+  position: absolute;
+  content: "";
+  top: 0%;
+  left: 0%;
+  right: 50%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background-color: #fff;
+}
+#main .part-sec .man:hover::after {
+  display: block;
+  content: "MAN";
+  color: #000;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+#main .part-sec .accessory {
+  position: relative;
+}
+#main .part-sec .accessory::after {
+  display: none;
+  position: absolute;
+  content: "";
+  top: 0%;
+  left: 0%;
+  right: 50%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background-color: #fff;
+}
+#main .part-sec .accessory:hover::after {
+  display: block;
+  content: "ACCESSORY";
+  color: #000;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+#main .part-sec .introduce {
+  position: relative;
+}
+#main .part-sec .introduce::after {
+  display: none;
+  position: absolute;
+  content: "";
+  top: 0%;
+  left: 0%;
+  right: 50%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background-color: #fff;
+}
+#main .part-sec .introduce:hover::after {
+  display: block;
+  content: "INTRODUCE";
+  color: #000;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+#main .part-sec img {
+  width: 100%;
+}
+#main .part-sec .part-g {
+  margin-bottom: 6%;
+}
+#main .youtube {
+  position: relative;
+  height: 800px;
+  background-color: #333;
+  overflow: hidden;
+  top: 3%;
+}
+#main .youtube .youtube__area {
+  width: 1920px;
+  position: absolute;
+  /* 16비율 */
+  left: 50%;
+  margin-left: -960px;
+  /* 9비율 */
+  top: 50%;
+  margin-top: -540px;
+}
+#main .youtube .youtube__area::before {
+  content: "";
+  display: block;
+  /* 16:9 영상 비율로 요소 크기 만들기! */
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+#main .youtube .youtube__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#main #player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#main #swiper {
+  position: relative;
+  top: 7%;
+  z-index: 0;
+}
+#main #swiper .swiper-bnr {
+  color: #fff;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5%;
+}
+#main #swiper .swiper {
+  width: 100%;
+  height: 100%;
+}
+#main #swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main #swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+#main .show {
+  text-align: center;
+  margin-top: 5%;
+}
+#main .running {
+  position: relative;
+  top: 10%;
+}
+#main .running .runningtext-box {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 75%;
+}
+#main .running .runningtext-box h3 {
+  font-size: 45px;
+  color: #fff;
+}
+#main .running .running-text {
+  white-space: nowrap;
+  font-size: 20px;
+  animation: runningText 45s linear infinite;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+@keyframes runningText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .contents {
@@ -336,7 +568,7 @@ legend {
 }
 
 .container {
-  padding-left: 20%;
+  padding: 0 120px;
 }
 
 .wrap {
@@ -430,6 +662,7 @@ legend {
   position: absolute;
   top: 200px;
   left: 100px;
+  z-index: 1;
 }
 #gnb .sidebar__inner {
   position: fixed !important;
@@ -489,4 +722,4 @@ legend {
   justify-content: center;
   text-align: center;
   margin-top: 70px;
-}/*# sourceMappingURL=comm.css.map */
+} /*# sourceMappingURL=comm.css.map */
