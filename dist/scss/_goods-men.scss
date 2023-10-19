@@ -1,3 +1,105 @@
-.contents {
-  height: 300px;
+// .contents {
+//   height: 300px;
+// }
+
+#main {
+  width: 100%;
+
+  // background-color: #ccc;
+}
+.goods_inner {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 120px;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  // background-color: #333;
+}
+.goods_lst {
+  float: left;
+  clear: both;
+  width: 90%;
+  height: 100%;
+
+  .box1,
+  .box3,
+  .box5,
+  .box7 {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 30vw;
+    margin-bottom: 20px;
+
+    .box1-1,
+    .box1-2,
+    .box1-3,
+    .box3-1,
+    .box3-2,
+    .box3-3,
+    .box5-1,
+    .box5-2,
+    .box5-3,
+    .box7-1,
+    .box7-2,
+    .box7-3 {
+      width: 33.333%;
+    }
+    // .box1-2, {
+    //   width: 33.333%;
+
+    //   background-color: #ddd;
+    // }
+    // .box1-3 {
+    //   width: 33.333%;
+
+    //   background-color: #ddd;
+    // }
+  }
+  .box2 {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    height: 30vw;
+    margin-bottom: 20px;
+    .box2-1 {
+      width: 30%;
+      background-color: #ddd;
+    }
+    .box2-2 {
+      float: left;
+      width: 70%;
+      background-color: #ddd;
+    }
+  }
+  .box4 {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    height: 30vw;
+    margin-bottom: 20px;
+    .box4-1 {
+      width: 70%;
+      background-color: #ddd;
+    }
+    .box4-2 {
+      float: left;
+      width: 30%;
+      background-color: #ddd;
+    }
+  }
+  .box6 {
+    width: 100%;
+    height: 30vw;
+    margin-bottom: 20px;
+    background-color: #ddd;
+  }
 }
