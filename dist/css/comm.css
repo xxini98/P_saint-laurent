@@ -534,12 +534,257 @@ legend {
   height: 300px;
 }
 
-.contents {
-  height: 300px;
+#main {
+  width: 100%;
+  height: auto;
 }
 
-.contents {
-  height: 300px;
+.goods_inner {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 120px;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+.goods_inner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.goods_lst {
+  float: left;
+  clear: both;
+  width: 90%;
+  height: 100%;
+}
+.goods_lst .box1,
+.goods_lst .box3,
+.goods_lst .box5,
+.goods_lst .box7 {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 30vw;
+  margin-bottom: 20px;
+}
+.goods_lst .box1 .box1-1,
+.goods_lst .box1 .box1-2,
+.goods_lst .box1 .box1-3,
+.goods_lst .box1 .box3-1,
+.goods_lst .box1 .box3-2,
+.goods_lst .box1 .box3-3,
+.goods_lst .box1 .box5-1,
+.goods_lst .box1 .box5-2,
+.goods_lst .box1 .box5-3,
+.goods_lst .box1 .box7-1,
+.goods_lst .box1 .box7-2,
+.goods_lst .box1 .box7-3,
+.goods_lst .box3 .box1-1,
+.goods_lst .box3 .box1-2,
+.goods_lst .box3 .box1-3,
+.goods_lst .box3 .box3-1,
+.goods_lst .box3 .box3-2,
+.goods_lst .box3 .box3-3,
+.goods_lst .box3 .box5-1,
+.goods_lst .box3 .box5-2,
+.goods_lst .box3 .box5-3,
+.goods_lst .box3 .box7-1,
+.goods_lst .box3 .box7-2,
+.goods_lst .box3 .box7-3,
+.goods_lst .box5 .box1-1,
+.goods_lst .box5 .box1-2,
+.goods_lst .box5 .box1-3,
+.goods_lst .box5 .box3-1,
+.goods_lst .box5 .box3-2,
+.goods_lst .box5 .box3-3,
+.goods_lst .box5 .box5-1,
+.goods_lst .box5 .box5-2,
+.goods_lst .box5 .box5-3,
+.goods_lst .box5 .box7-1,
+.goods_lst .box5 .box7-2,
+.goods_lst .box5 .box7-3,
+.goods_lst .box7 .box1-1,
+.goods_lst .box7 .box1-2,
+.goods_lst .box7 .box1-3,
+.goods_lst .box7 .box3-1,
+.goods_lst .box7 .box3-2,
+.goods_lst .box7 .box3-3,
+.goods_lst .box7 .box5-1,
+.goods_lst .box7 .box5-2,
+.goods_lst .box7 .box5-3,
+.goods_lst .box7 .box7-1,
+.goods_lst .box7 .box7-2,
+.goods_lst .box7 .box7-3 {
+  width: 33.333%;
+}
+.goods_lst .box2 {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  height: 30vw;
+  margin-bottom: 20px;
+}
+.goods_lst .box2 .box2-1 {
+  width: 30%;
+  background-color: #ddd;
+}
+.goods_lst .box2 .box2-2 {
+  float: left;
+  width: 70%;
+  background-color: #ddd;
+}
+.goods_lst .box4 {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  height: 30vw;
+  margin-bottom: 20px;
+}
+.goods_lst .box4 .box4-1 {
+  width: 70%;
+  background-color: #ddd;
+}
+.goods_lst .box4 .box4-2 {
+  float: left;
+  width: 30%;
+  background-color: #ddd;
+}
+.goods_lst .box6 {
+  width: 100%;
+  height: 30vw;
+  margin-bottom: 20px;
+  background-color: #ddd;
+}
+
+#main {
+  width: 100%;
+}
+
+.goods_inner {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 120px;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+.goods_inner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.goods_lst {
+  float: left;
+  clear: both;
+  width: 90%;
+  height: 100%;
+}
+.goods_lst .box1,
+.goods_lst .box3,
+.goods_lst .box5,
+.goods_lst .box7 {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 30vw;
+  margin-bottom: 20px;
+}
+.goods_lst .box1 .box1-1,
+.goods_lst .box1 .box1-2,
+.goods_lst .box1 .box1-3,
+.goods_lst .box1 .box3-1,
+.goods_lst .box1 .box3-2,
+.goods_lst .box1 .box3-3,
+.goods_lst .box1 .box5-1,
+.goods_lst .box1 .box5-2,
+.goods_lst .box1 .box5-3,
+.goods_lst .box1 .box7-1,
+.goods_lst .box1 .box7-2,
+.goods_lst .box1 .box7-3,
+.goods_lst .box3 .box1-1,
+.goods_lst .box3 .box1-2,
+.goods_lst .box3 .box1-3,
+.goods_lst .box3 .box3-1,
+.goods_lst .box3 .box3-2,
+.goods_lst .box3 .box3-3,
+.goods_lst .box3 .box5-1,
+.goods_lst .box3 .box5-2,
+.goods_lst .box3 .box5-3,
+.goods_lst .box3 .box7-1,
+.goods_lst .box3 .box7-2,
+.goods_lst .box3 .box7-3,
+.goods_lst .box5 .box1-1,
+.goods_lst .box5 .box1-2,
+.goods_lst .box5 .box1-3,
+.goods_lst .box5 .box3-1,
+.goods_lst .box5 .box3-2,
+.goods_lst .box5 .box3-3,
+.goods_lst .box5 .box5-1,
+.goods_lst .box5 .box5-2,
+.goods_lst .box5 .box5-3,
+.goods_lst .box5 .box7-1,
+.goods_lst .box5 .box7-2,
+.goods_lst .box5 .box7-3,
+.goods_lst .box7 .box1-1,
+.goods_lst .box7 .box1-2,
+.goods_lst .box7 .box1-3,
+.goods_lst .box7 .box3-1,
+.goods_lst .box7 .box3-2,
+.goods_lst .box7 .box3-3,
+.goods_lst .box7 .box5-1,
+.goods_lst .box7 .box5-2,
+.goods_lst .box7 .box5-3,
+.goods_lst .box7 .box7-1,
+.goods_lst .box7 .box7-2,
+.goods_lst .box7 .box7-3 {
+  width: 33.333%;
+}
+.goods_lst .box2 {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  height: 30vw;
+  margin-bottom: 20px;
+}
+.goods_lst .box2 .box2-1 {
+  width: 30%;
+  background-color: #ddd;
+}
+.goods_lst .box2 .box2-2 {
+  float: left;
+  width: 70%;
+  background-color: #ddd;
+}
+.goods_lst .box4 {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  height: 30vw;
+  margin-bottom: 20px;
+}
+.goods_lst .box4 .box4-1 {
+  width: 70%;
+  background-color: #ddd;
+}
+.goods_lst .box4 .box4-2 {
+  float: left;
+  width: 30%;
+  background-color: #ddd;
+}
+.goods_lst .box6 {
+  width: 100%;
+  height: 30vw;
+  margin-bottom: 20px;
+  background-color: #ddd;
 }
 
 .contents {
