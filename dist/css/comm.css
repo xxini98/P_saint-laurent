@@ -869,7 +869,7 @@ legend {
   width: 1440px;
   left: 50%;
   top: 0;
-  transform: translateX(-50%) !important;
+  transform: translateX(-50%);
   height: 180px;
   transition: ease 0.4s;
   z-index: 10;
