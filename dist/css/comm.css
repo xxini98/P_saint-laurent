@@ -800,7 +800,8 @@ legend {
 }
 
 .container {
-  padding: 0 120px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .wrap {
@@ -820,7 +821,7 @@ legend {
 .bg_b #logo {
   position: absolute;
   top: 35px;
-  left: 100px;
+  left: 0;
 }
 .bg_b #logo a {
   display: inline-block;
@@ -844,7 +845,7 @@ legend {
 .bg_w #logo {
   position: absolute;
   top: 35px;
-  left: 100px;
+  left: 0;
 }
 .bg_w #logo a {
   display: inline-block;
@@ -857,29 +858,27 @@ legend {
 
 #header {
   position: relative;
-  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   height: 182px;
   background: transparent;
   font-family: "Libre Baskerville";
 }
 #header .head_inner {
   position: fixed;
-  width: 100%;
-  left: 0;
+  width: 1440px;
+  left: 50%;
   top: 0;
+  transform: translateX(-50%) !important;
   height: 180px;
   transition: ease 0.4s;
   z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 120px;
 }
 
 #tnb {
   position: absolute;
   top: 35px;
-  right: 120px;
+  right: 0;
 }
 #tnb .tnb-wrap {
   display: flex;
@@ -891,15 +890,12 @@ legend {
 }
 
 #gnb {
-  position: absolute;
-  top: 200px;
-  left: 100px;
+  max-width: 1440px;
   z-index: 1;
 }
 #gnb .sidebar__inner {
   position: fixed !important;
   top: 223px !important;
-  left: 100px !important;
   width: 140px !important;
   transform: translate3d(0px, -46px, 0) !important;
 }
@@ -923,8 +919,8 @@ legend {
 
 #footer {
   position: relative;
-  padding: 170px 120px 100px;
-  width: 100%;
+  max-width: 1440px;
+  margin: 100px auto;
 }
 #footer .fot-up {
   display: flex;
