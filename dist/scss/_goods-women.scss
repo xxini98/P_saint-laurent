@@ -43,20 +43,30 @@
     height: 30vw;
     margin-bottom: 20px;
 
-    .box1-1,
-    .box1-2,
-    .box1-3,
-    .box3-1,
-    .box3-2,
-    .box3-3,
-    .box5-1,
-    .box5-2,
-    .box5-3,
-    .box7-1,
-    .box7-2,
-    .box7-3 {
+    .box-wrap {
       width: 33.333%;
+      position: relative;
+      .box2-1 {
+        width: 30%;
+      }
+      .box2-2 {
+        width: 70%;
+      }
     }
+
+    // .box1-1,
+    // .box1-2,
+    // .box1-3,
+    // .box3-1,
+    // .box3-2,
+    // .box3-3,
+    // .box5-1,
+    // .box5-2,
+    // .box5-3,
+    // .box7-1,
+    // .box7-2,
+    // .box7-3 {
+    // }
     // .box1-2, {
     //   width: 33.333%;
 
@@ -67,6 +77,42 @@
 
     //   background-color: #ddd;
     // }
+  }
+  .hoverbox {
+    background-color: #0f0f0f;
+    opacity: 0.8;
+  }
+  .text1 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    p {
+      font-weight: 200;
+      color: #fff;
+    }
+    .color {
+      display: flex;
+      .color1 {
+        width: 35px;
+        height: 10px;
+        background-color: #fff;
+        margin-right: 10px;
+      }
+      .color2 {
+        width: 35px;
+        height: 10px;
+        background-color: #fff;
+      }
+    }
   }
   .box2 {
     display: flex;
@@ -105,5 +151,10 @@
     height: 30vw;
     margin-bottom: 20px;
     background-color: #ddd;
+  }
+}
+.box-wrap:hover {
+  .text1 {
+    display: flex;
   }
 }
