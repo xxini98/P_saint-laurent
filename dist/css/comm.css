@@ -526,8 +526,346 @@ legend {
   height: 300px;
 }
 
-.contents {
-  height: 300px;
+.item_wrap {
+  overflow: visible !important;
+}
+
+.item_view-wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.item_view-inner {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.item_left {
+  width: 50%;
+}
+.item_left .product-img {
+  width: 100%;
+  height: 100%;
+}
+.item_left .product-img .pd-img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.item_left .product-img .pd-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.item_left .product-img ._pi5 {
+  margin-bottom: 0;
+}
+
+.item_right {
+  position: sticky;
+  top: 118px;
+  width: 45%;
+  height: 100%;
+  margin-bottom: 350px;
+}
+.item_right .item_info_wrap {
+  width: 100%;
+  text-align: center;
+}
+
+.item_tit {
+  position: relative;
+  width: 100%;
+  margin-bottom: 70px;
+}
+.item_tit ._it-title {
+  font-family: "Libre Baskerville";
+  font-weight: bold;
+  font-size: 24px;
+}
+.item_tit .item_price {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 141%;
+  left: 35%;
+}
+.item_tit .item_price ._it-price {
+  font-weight: bold;
+  font-size: 22px;
+}
+.item_tit .item_price::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 170%;
+  width: 150px;
+  height: 2px;
+  transform: translate(-50%, -50%);
+  background: white;
+}
+
+.item_color {
+  margin-bottom: 35px;
+}
+.item_color .color-options {
+  position: relative;
+  height: 100px;
+  position: relative;
+}
+.item_color .color-options input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.item_color .color-options input[type=radio]:checked + label::after {
+  position: absolute;
+  content: " ";
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+.item_color .color-options .color-picker {
+  display: flex;
+  justify-content: space-between;
+  width: 205px;
+  height: 37px;
+  margin: 0 auto;
+}
+.item_color .color-options .color-picker label {
+  position: relative;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid #000;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.item_color .color-options .color-picker label::after {
+  position: absolute;
+  content: " ";
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  border-bottom: 2px solid black;
+}
+.item_color .color-options .color-picker span {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+.item_color .color-options .color-picker .black {
+  background: #000;
+}
+.item_color .color-options .color-picker .blancvintage {
+  background: #faf7ed;
+}
+.item_color .color-options .color-picker .storm {
+  background: #4d4d4d;
+}
+.item_color .color-options .color-picker .darkbaige {
+  background: #d19e6b;
+}
+.item_color .color-options .color-picker-txt {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 35px;
+  color: #fff;
+}
+.item_color .color-options .color-picker-txt .color2 {
+  display: none;
+}
+.item_color .color-options .color-picker-txt .color3 {
+  display: none;
+}
+.item_color .color-options .color-picker-txt .color4 {
+  display: none;
+}
+
+.size-option {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.size-option .size-picker {
+  width: 280px;
+}
+.size-option .size-picker-tab {
+  position: relative;
+  display: flex;
+  height: 24px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.size-option .size-picker-tab::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 3px;
+  background: #999;
+}
+.size-option .size {
+  position: relative;
+  display: block;
+  width: 118px;
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #999;
+}
+.size-option .on {
+  position: relative;
+  display: block;
+  width: 118px;
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+.size-option .on::after {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  bottom: -4px;
+  left: -11px;
+  width: 145px;
+  height: 3px;
+  background: #ffffff;
+}
+.size-option .size-delivery {
+  text-align: center;
+  margin-top: 50px;
+}
+.size-option .size-delivery .size-delivery-txt {
+  display: block;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.cart-go-button {
+  all: unset;
+  display: flex;
+  width: 260px;
+  height: 30px;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  margin: 0 auto 35px;
+}
+.cart-go-button .but-txt {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+}
+
+.product-information-tabs {
+  width: 100%;
+  box-sizing: border-box;
+}
+.product-information-tabs .product-information-tabs {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-information-tabs .product-information-tabs::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0px;
+  right: 0;
+  height: 4px;
+  width: 100%;
+  background: #999;
+}
+.product-information-tabs .product-information-tabs .details-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 16px;
+  width: 33.333%;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Libre Baskerville";
+}
+.product-information-tabs .product-information-tabs-panel {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin: 50px 20px 0;
+  line-height: 120%;
+}
+
+.details-tabs.on {
+  position: relative;
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  font-weight: 700;
+}
+.details-tabs.on::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #ffffff;
+}
+
+.detail-infomation {
+  display: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.di1 {
+  top: 140px;
+  left: 270px;
+}
+
+.di2 {
+  top: 235px;
+  left: 100px;
+}
+
+.details-tabs.on .detail-infomation {
+  display: block;
 }
 
 .contents {
@@ -686,19 +1024,6 @@ legend {
   background-color: #a79166;
   border: 1px solid #fff;
   margin-right: 3px;
-  position: relative;
-}
-.goods_lst .box1 .box-wrap .box2-1,
-.goods_lst .box3 .box-wrap .box2-1,
-.goods_lst .box5 .box-wrap .box2-1,
-.goods_lst .box7 .box-wrap .box2-1 {
-  width: 30%;
-}
-.goods_lst .box1 .box-wrap .box2-2,
-.goods_lst .box3 .box-wrap .box2-2,
-.goods_lst .box5 .box-wrap .box2-2,
-.goods_lst .box7 .box-wrap .box2-2 {
-  width: 70%;
 }
 .goods_lst .hoverbox {
   background-color: #0f0f0f;
@@ -1036,51 +1361,67 @@ legend {
   overflow: hidden;
 }
 
-.bg_b {
+.bg_b,
+.f-bg_b {
   background: #000;
 }
 .bg_b span,
 .bg_b a,
 .bg_b p,
 .bg_b li,
-.bg_b button {
+.bg_b button,
+.f-bg_b span,
+.f-bg_b a,
+.f-bg_b p,
+.f-bg_b li,
+.f-bg_b button {
   color: white;
 }
-.bg_b #logo {
+.bg_b #logo,
+.f-bg_b #logo {
   position: absolute;
   top: 35px;
   left: 0;
 }
-.bg_b #logo a {
+.bg_b #logo a,
+.f-bg_b #logo a {
   display: inline-block;
   width: 255px;
   height: 25px;
   background: url(../../images/comm/white/logo-svg.svg) no-repeat 0 0;
-  background-size: cover;
+  background-size: contain;
   text-indent: -99999px;
 }
 
-.bg_w {
+.bg_w,
+.f-bg_w {
   background: #fff;
 }
 .bg_w span,
 .bg_w a,
 .bg_w p,
 .bg_w li,
-.bg_w button {
+.bg_w button,
+.f-bg_w span,
+.f-bg_w a,
+.f-bg_w p,
+.f-bg_w li,
+.f-bg_w button {
   color: black;
 }
-.bg_w #logo {
+.bg_w #logo,
+.f-bg_w #logo {
   position: absolute;
   top: 35px;
   left: 0;
 }
-.bg_w #logo a {
+.bg_w #logo a,
+.f-bg_w #logo a {
   display: inline-block;
   width: 255px;
   height: 25px;
   background: url(../../images/comm/black/logo-svg.svg) no-repeat 0 0;
-  background-size: cover;
+  background-size: contain;
   text-indent: -99999px;
 }
 
@@ -1147,8 +1488,14 @@ legend {
 
 #footer {
   position: relative;
+  width: 100%;
+  padding: 100px 0;
+  overflow: hidden;
+}
+#footer .foot_inner {
   max-width: 1440px;
-  margin: 100px auto;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 #footer .fot-up {
   display: flex;
@@ -1178,4 +1525,68 @@ legend {
   justify-content: center;
   text-align: center;
   margin-top: 70px;
+}
+
+.f-bg_b .running {
+  position: relative;
+  top: 10%;
+}
+.f-bg_b .running .runningtext-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 75%;
+}
+.f-bg_b .running .runningtext-box h3 {
+  font-size: 45px;
+  color: #fff;
+}
+.f-bg_b .running .running-text {
+  white-space: nowrap;
+  font-size: 20px;
+  animation: runningText 45s linear infinite;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+@keyframes runningText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.f-bg_w .running {
+  position: relative;
+  top: 10%;
+}
+.f-bg_w .running .runningtext-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 75%;
+}
+.f-bg_w .running .runningtext-box h3 {
+  font-size: 45px;
+  color: #000000;
+}
+.f-bg_w .running .running-text {
+  white-space: nowrap;
+  font-size: 20px;
+  animation: runningText 45s linear infinite;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+}
+@keyframes runningText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }/*# sourceMappingURL=comm.css.map */

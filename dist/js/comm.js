@@ -16,8 +16,6 @@ $(function () {
   });
 });
 
-
-
 const showAnim = gsap
   .from(".head_inner", {
     yPercent: -100,
