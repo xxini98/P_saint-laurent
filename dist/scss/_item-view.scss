@@ -1,4 +1,5 @@
 .item_wrap {
+  position: relative;
   overflow: visible !important ;
 }
 
@@ -52,23 +53,23 @@
   ._it-title {
     font-family: $fl;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
   }
   .item_price {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 141%;
+    top: 150%;
     left: 35%;
     ._it-price {
       font-weight: bold;
-      font-size: 22px;
+      font-size: 18px;
     }
     &::after {
       content: "";
       position: absolute;
       top: 50%;
       left: 170%;
-      width: 150px;
+      width: 130px;
       height: 2px;
       transform: translate(-50%, -50%);
       background: white;
@@ -162,7 +163,7 @@
     .color-picker-txt {
       display: block;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 18px;
       text-align: center;
       margin-top: 35px;
       color: $w;
@@ -191,7 +192,7 @@
     display: flex;
     height: 24px;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     &::after {
       content: "";
       position: absolute;
@@ -225,7 +226,7 @@
       position: absolute;
       content: "";
       z-index: 1;
-      bottom: -4px;
+      bottom: -7px;
       left: -11px;
       width: 145px;
       height: 3px;
@@ -238,7 +239,7 @@
     .size-delivery-txt {
       display: block;
       font-family: $ro;
-      font-weight: 400;
+      font-weight: 300;
       font-size: 16px;
     }
   }
@@ -253,6 +254,7 @@
   border: none;
   margin: 0 auto 35px;
   .but-txt {
+    width: 100%;
     font-family: $ro;
     font-weight: 700;
     font-size: 18px;
@@ -326,11 +328,10 @@
 .detail-infomation {
   display: none;
   position: absolute;
-
   transform: translate(-50%, -50%);
   width: 400px;
   font-family: $ro;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
 }
 .di1 {
@@ -345,4 +346,158 @@
   .detail-infomation {
     display: block;
   }
+}
+
+
+
+
+#modal {
+  display: none;
+  position: absolute;
+  top: 180px;
+  right: 170px;
+  .modal-wrap {
+    width: 580px;
+    height: 855px;
+    padding: 55px 40px;
+    background: rgb(0, 0, 0);
+  }
+}
+
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 15px;
+  color: $w;
+  h2 {
+    font-family: $fl;
+  }
+  button {
+    color: $w;
+    font-size: 30px;
+  }
+}
+
+.modal-content {
+  padding: 40px 0;
+  border-bottom: 1px solid $w;
+  .cart {
+    margin-bottom: 40px;
+  }
+}
+
+.cart-wrap {
+  display: flex;
+  justify-content: space-between;
+  .cart_img {
+    width: 180px;
+    height: 180px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-position: 0px -120px;
+      object-fit: cover;
+    }
+  }
+  .cart_infomation {
+    width: 290px;
+    color: $w;
+    ._cti {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+    .__nametag {
+      width: 70%;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .__nameprice {
+      width: 40%;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .__cedit {
+      border-bottom: 1px solid $w;
+    }
+    .cart-quantity {
+      position: relative;
+      .__c-q {
+        position: absolute;
+        top: -2px;
+        left: 30%;
+        display: flex;
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        #cart-num {
+          width: 15px;
+          color: $w;
+          font-size: 20px;
+          background: transparent;
+          border: none;
+        }
+      }
+      .__cremove {
+        border-bottom: 1px solid $w;
+      }
+    }
+  }
+}
+.cart-but {
+  text-align: center;
+  .__cbutton {
+    color: $w;
+    width: 150px;
+    height: 40px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid $w;
+  }
+}
+
+.modal-bottom {
+  margin-top: 15px;
+  color: $w;
+  .modal_total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    .__mtotal {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .__msum {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  .modal_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      width: 45%;
+      height: 50px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .__mbag {
+      color: $w;
+      border: 1px solid $w;
+    }
+    .__mco {
+      background: $w;
+    }
+  }
+}
+
+#modal.on {
+  display: block;
 }

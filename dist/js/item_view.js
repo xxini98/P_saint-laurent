@@ -69,3 +69,12 @@ document.getElementById("storm").addEventListener("click", function () {
 document.getElementById("darkbaige").addEventListener("click", function () {
   document.getElementById("color1").innerHTML = "COLOR : DARK BAIGE";
 });
+
+$(function () {
+  $(".cart-go-button .but-txt").on("click", function () {
+    $("#modal").addClass("on");
+  });
+  $(".modal-title button").on("click", function () {
+    $("#modal").removeClass("on");
+  });
+});

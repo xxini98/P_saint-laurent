@@ -319,6 +319,9 @@ legend {
 #main .part-sec .women {
   position: relative;
 }
+#main .part-sec .women a {
+  display: block;
+}
 #main .part-sec .women::after {
   display: none;
   position: absolute;
@@ -329,7 +332,7 @@ legend {
   width: 100%;
   height: 100%;
   opacity: 0.9;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #main .part-sec .women:hover::after {
   display: block;
@@ -340,6 +343,7 @@ legend {
   justify-content: center;
   align-items: center;
   font-size: 60px;
+  font-family: "Libre Baskerville";
 }
 #main .part-sec .man {
   position: relative;
@@ -354,7 +358,7 @@ legend {
   width: 100%;
   height: 100%;
   opacity: 0.9;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #main .part-sec .man:hover::after {
   display: block;
@@ -365,6 +369,7 @@ legend {
   justify-content: center;
   align-items: center;
   font-size: 60px;
+  font-family: "Libre Baskerville";
 }
 #main .part-sec .accessory {
   position: relative;
@@ -379,7 +384,7 @@ legend {
   width: 100%;
   height: 100%;
   opacity: 0.9;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #main .part-sec .accessory:hover::after {
   display: block;
@@ -390,6 +395,7 @@ legend {
   justify-content: center;
   align-items: center;
   font-size: 60px;
+  font-family: "Libre Baskerville";
 }
 #main .part-sec .introduce {
   position: relative;
@@ -404,7 +410,7 @@ legend {
   width: 100%;
   height: 100%;
   opacity: 0.9;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 #main .part-sec .introduce:hover::after {
   display: block;
@@ -415,6 +421,7 @@ legend {
   justify-content: center;
   align-items: center;
   font-size: 60px;
+  font-family: "Libre Baskerville";
 }
 #main .part-sec img {
   width: 100%;
@@ -467,6 +474,7 @@ legend {
   z-index: 0;
 }
 #main #swiper .swiper-bnr {
+  font-family: "Libre Baskerville";
   color: #fff;
   text-align: center;
   color: #fff;
@@ -495,6 +503,8 @@ legend {
 #main .show {
   text-align: center;
   margin-top: 5%;
+  font-family: "Libre Baskerville";
+  font-size: 18px;
 }
 #main .running {
   position: relative;
@@ -534,6 +544,7 @@ legend {
 }
 
 .item_wrap {
+  position: relative;
   overflow: visible !important;
 }
 
@@ -593,24 +604,24 @@ legend {
 .item_tit ._it-title {
   font-family: "Libre Baskerville";
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
 }
 .item_tit .item_price {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 141%;
+  top: 150%;
   left: 35%;
 }
 .item_tit .item_price ._it-price {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 18px;
 }
 .item_tit .item_price::after {
   content: "";
   position: absolute;
   top: 50%;
   left: 170%;
-  width: 150px;
+  width: 130px;
   height: 2px;
   transform: translate(-50%, -50%);
   background: white;
@@ -691,7 +702,7 @@ legend {
 .item_color .color-options .color-picker-txt {
   display: block;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   margin-top: 35px;
   color: #fff;
@@ -719,7 +730,7 @@ legend {
   display: flex;
   height: 24px;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
 }
 .size-option .size-picker-tab::after {
   content: "";
@@ -754,7 +765,7 @@ legend {
   position: absolute;
   content: "";
   z-index: 1;
-  bottom: -4px;
+  bottom: -7px;
   left: -11px;
   width: 145px;
   height: 3px;
@@ -767,7 +778,7 @@ legend {
 .size-option .size-delivery .size-delivery-txt {
   display: block;
   font-family: "Roboto";
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
 }
 
@@ -782,6 +793,7 @@ legend {
   margin: 0 auto 35px;
 }
 .cart-go-button .but-txt {
+  width: 100%;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
@@ -857,7 +869,7 @@ legend {
   transform: translate(-50%, -50%);
   width: 400px;
   font-family: "Roboto";
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
 }
 
@@ -872,6 +884,160 @@ legend {
 }
 
 .details-tabs.on .detail-infomation {
+  display: block;
+}
+
+#modal {
+  display: none;
+  position: absolute;
+  top: 180px;
+  right: 170px;
+}
+#modal .modal-wrap {
+  width: 580px;
+  height: 855px;
+  padding: 55px 40px;
+  background: rgb(0, 0, 0);
+}
+
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 15px;
+  color: #fff;
+}
+.modal-title h2 {
+  font-family: "Libre Baskerville";
+}
+.modal-title button {
+  color: #fff;
+  font-size: 30px;
+}
+
+.modal-content {
+  padding: 40px 0;
+  border-bottom: 1px solid #fff;
+}
+.modal-content .cart {
+  margin-bottom: 40px;
+}
+
+.cart-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-wrap .cart_img {
+  width: 180px;
+  height: 180px;
+}
+.cart-wrap .cart_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: 0px -120px;
+     object-position: 0px -120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cart-wrap .cart_infomation {
+  width: 290px;
+  color: #fff;
+}
+.cart-wrap .cart_infomation ._cti {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.cart-wrap .cart_infomation .__nametag {
+  width: 70%;
+  font-weight: bold;
+  font-size: 16px;
+}
+.cart-wrap .cart_infomation .__nameprice {
+  width: 40%;
+  font-weight: bold;
+  font-size: 16px;
+}
+.cart-wrap .cart_infomation .__cedit {
+  border-bottom: 1px solid #fff;
+}
+.cart-wrap .cart_infomation .cart-quantity {
+  position: relative;
+}
+.cart-wrap .cart_infomation .cart-quantity .__c-q {
+  position: absolute;
+  top: -2px;
+  left: 30%;
+  display: flex;
+}
+.cart-wrap .cart_infomation .cart-quantity .__c-q input[type=number]::-webkit-outer-spin-button,
+.cart-wrap .cart_infomation .cart-quantity .__c-q input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cart-wrap .cart_infomation .cart-quantity .__c-q #cart-num {
+  width: 15px;
+  color: #fff;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+}
+.cart-wrap .cart_infomation .cart-quantity .__cremove {
+  border-bottom: 1px solid #fff;
+}
+
+.cart-but {
+  text-align: center;
+}
+.cart-but .__cbutton {
+  color: #fff;
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 16px;
+  border: 1px solid #fff;
+}
+
+.modal-bottom {
+  margin-top: 15px;
+  color: #fff;
+}
+.modal-bottom .modal_total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.modal-bottom .modal_total .__mtotal {
+  font-size: 18px;
+  font-weight: bold;
+}
+.modal-bottom .modal_total .__msum {
+  font-size: 18px;
+  font-weight: bold;
+}
+.modal-bottom .modal_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-bottom .modal_button button {
+  width: 45%;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.modal-bottom .modal_button .__mbag {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.modal-bottom .modal_button .__mco {
+  background: #fff;
+}
+
+#modal.on {
   display: block;
 }
 

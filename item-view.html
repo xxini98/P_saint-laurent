@@ -261,7 +261,7 @@
               </div>
               <div class="product-information-tabs">
                 <ul class="product-information-tabs">
-                  <li class="details-tabs">
+                  <li class="details-tabs on">
                     <div class="detail-div">
                       <a href="javascript:void(0);">PRODUCT DETAILS</a>
                       <div class="detail-infomation di1">
@@ -273,7 +273,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="details-tabs on">
+                  <li class="details-tabs">
                     <div class="detail-div">
                       <a href="javascript:void(0)">FABRIC & CARE</a>
                       <div class="detail-infomation di2">
@@ -306,5 +306,111 @@
       </main>
     </div>
     <footer data-include-path="./outline/footer_bg-b.html"></footer>
+
+    <!-- MODAL 창 -->
+    <section id="modal" class="modal-dimmed">
+      <div class="modal-wrap">
+        <div class="modal-title">
+          <h2>MY CART</h2>
+          <button class="material-symbols-outlined">close</button>
+        </div>
+        <div class="modal-content">
+          <div class="cart __cart1">
+            <div class="cart-wrap">
+              <div class="cart_img">
+                <img
+                  src="./images/thumb/item_view/black1.jpg"
+                  alt="KATE MEDIUM CHAIN BAG IN GRAIN DE POUDRE EMBOSSED
+                LEATHER"
+                />
+              </div>
+              <div class="cart_infomation">
+                <div class="_cti cart_tit-price">
+                  <span class="__nametag"
+                    >KATE MEDIUM CHAIN BAG IN GRAIN DE POUDRE EMBOSSED
+                    LEATHER</span
+                  >
+                  <span class="__nameprice">￦ 2,970,000</span>
+                </div>
+                <div class="_cti cart-color">
+                  <span class="__ccolor">COLOR : BLACK</span>
+                  <span class="__cedit">EDIT</span>
+                </div>
+                <div class="_cti cart-quantity">
+                  <span>QUANTITY </span>
+                  <div class="__c-q">
+                    <span class="material-symbols-outlined"> remove </span>
+                    <label for="cart-num"></label>
+                    <input
+                      type="number"
+                      name="cart-num"
+                      id="cart-num"
+                      step="1"
+                      value="1"
+                    />
+                    <span class="material-symbols-outlined"> add </span>
+                  </div>
+                  <span class="__cremove">REMOVE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart __cart2">
+            <div class="cart-wrap">
+              <div class="cart_img">
+                <img
+                  src="./images/thumb/cart/cart-bag2.jpg"
+                  alt="LOU CAMERA BAG IN QUILTED LEATHER"
+                />
+              </div>
+              <div class="cart_infomation">
+                <div class="_cti cart_tit-price">
+                  <span class="__nametag"
+                    >LOU CAMERA BAG IN QUILTED LEATHER</span
+                  >
+                  <span class="__nameprice">￦ 5,110,000</span>
+                </div>
+                <div class="_cti cart-color">
+                  <span class="__ccolor">COLOR : BLACK</span>
+                  <span class="__cedit">EDIT</span>
+                </div>
+                <div class="_cti cart-quantity">
+                  <span>QUANTITY </span>
+                  <div class="__c-q">
+                    <span class="material-symbols-outlined"> remove </span>
+                    <label for="cart-num"></label>
+                    <input
+                      type="number"
+                      name="cart-num"
+                      id="cart-num"
+                      step="1"
+                      value="2"
+                    />
+                    <span class="material-symbols-outlined"> add </span>
+                  </div>
+                  <span class="__cremove">REMOVE</span>
+                </div>
+                <div class="cart_soldout">
+                  <span> YOU REACHED THE LIMIT QUANTITY FOR THIS PRODUCT </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-but">
+            <button class="__cbutton">+ VIEW MORE</button>
+          </div>
+        </div>
+        <div class="modal-bottom">
+          <div class="modal_total">
+            <span class="__mtotal">TOTAL</span>
+            <span class="__msum">￦ 8,080,000</span>
+          </div>
+          <div class="modal_button">
+            <button class="mdt __mbag">SHOPPING BAG</button>
+            <button class="mdt __mco">CHECKOUT</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
