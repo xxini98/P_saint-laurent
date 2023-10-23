@@ -147,42 +147,6 @@
       }
     }
   }
-  .hoverbox {
-    background-color: #0f0f0f;
-    opacity: 0.8;
-  }
-  .text1 {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 30vw;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    gap: 10px;
-
-    p {
-      font-weight: 200;
-      color: #fff;
-    }
-    .color {
-      display: flex;
-      .color1 {
-        width: 35px;
-        height: 10px;
-        background-color: #fff;
-        margin-right: 10px;
-      }
-      .color2 {
-        width: 35px;
-        height: 10px;
-        background-color: #fff;
-      }
-    }
-  }
   .box2 {
     display: flex;
     width: 100%;
@@ -249,11 +213,6 @@
         width: 100%;
       }
     }
-  }
-}
-.box-wrap:hover {
-  .text1 {
-    display: flex;
   }
 }
 .box-wrap:hover {
