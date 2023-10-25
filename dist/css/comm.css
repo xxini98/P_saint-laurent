@@ -1054,8 +1054,198 @@ legend {
   display: block;
 }
 
-.contents {
-  height: 300px;
+.item_wrap {
+  position: relative;
+}
+
+.cart-wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.cart-inner {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.cart_left {
+  width: 70%;
+  height: 100%;
+}
+.cart_left .cart_title {
+  position: relative;
+  margin-bottom: 40px;
+}
+.cart_left .cart_title h2 {
+  font-family: "Libre Baskerville";
+  font-weight: bold;
+  font-size: 26px;
+}
+.cart_left .cart_title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 460px;
+  height: 1px;
+  transform: translateY(-50%);
+  background: #000;
+}
+.cart_left .cart_content {
+  display: flex;
+  justify-content: space-between;
+}
+.cart_left .__cartinfo1 {
+  margin-bottom: 100px;
+}
+
+.cart_info-left {
+  width: 405px;
+  height: 500px;
+}
+.cart_info-left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cart_info-right {
+  width: 45%;
+}
+.cart_info-right .bag_title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.cart_info-right .color-sec {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+.cart_info-right .color-sec span {
+  font-size: 18px;
+}
+.cart_info-right .color-sec .__bedit {
+  width: 90px;
+  height: 30px;
+  color: #fff;
+  background-color: #000;
+  font-weight: bold;
+  font-size: 16px;
+}
+.cart_info-right .qty-sec {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+.cart_info-right .qty-sec .qty_tit {
+  font-size: 18px;
+}
+.cart_info-right .qty-sec .__q-q {
+  position: absolute;
+  top: 3px;
+  left: 30%;
+  display: flex;
+  font-weight: bold;
+}
+.cart_info-right .qty-sec .__q-q input[type=number]::-webkit-outer-spin-button,
+.cart_info-right .qty-sec .__q-q input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cart_info-right .qty-sec .__q-q #bag-num {
+  width: 15px;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+}
+.cart_info-right .qty-sec .__bremove {
+  width: 90px;
+  height: 30px;
+  color: #fff;
+  background-color: #000;
+  font-weight: bold;
+  font-size: 16px;
+}
+.cart_info-right .bag_total {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.cart_right {
+  width: 27%;
+  height: 100%;
+}
+
+.checkout-wrap {
+  border: 1px solid #000;
+  padding: 15px;
+}
+.checkout-wrap .ch-w {
+  display: flex;
+  justify-content: space-between;
+}
+.checkout-wrap .order {
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #999;
+}
+.checkout-wrap .subtotal {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.checkout-wrap .cost {
+  border-bottom: 1px solid #999;
+  font-weight: bold;
+  padding-bottom: 5px;
+  margin-bottom: 80px;
+}
+.checkout-wrap .checkout {
+  text-align: center;
+}
+.checkout-wrap .checkout .__chout {
+  width: 100%;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.send_gift-wrap {
+  margin-top: 20px;
+  border: 1px solid #000;
+  padding: 15px;
+}
+.send_gift-wrap .send_title {
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #999;
+}
+.send_gift-wrap .send_img {
+  margin: 15px 0;
+  width: 100%;
+  height: 225px;
+}
+.send_gift-wrap .send_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.send_gift-wrap .send_text {
+  font-size: 14px;
+  letter-spacing: -0.5px;
 }
 
 #main {
@@ -1737,4 +1927,22 @@ legend {
   100% {
     transform: translateX(-100%);
   }
+<<<<<<< HEAD
 } /*# sourceMappingURL=comm.css.map */
+=======
+}
+
+::-webkit-scrollbar-track {
+  border: 1px solid black;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}/*# sourceMappingURL=comm.css.map */
+>>>>>>> cart
