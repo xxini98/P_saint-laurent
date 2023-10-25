@@ -24,10 +24,7 @@
   font-style: normal;
   font-weight: 400;
   src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local("Material Icons"), local("MaterialIcons-Regular"),
-    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
-    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
-    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
 /* reset */
 body,
@@ -121,14 +118,14 @@ body {
 }
 
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
-input[type="text"],
-input[type="password"],
-input[type="submit"],
-input[type="search"] {
+input[type=text],
+input[type=password],
+input[type=submit],
+input[type=search] {
   border-radius: 0;
 }
 
-input:checked[type="checkbox"] {
+input:checked[type=checkbox] {
   background-color: #666;
 }
 
@@ -136,10 +133,10 @@ button {
   border-radius: 0;
 }
 
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
-input[type="file"] {
+input[type=button],
+input[type=submit],
+input[type=reset],
+input[type=file] {
   border-radius: 0;
 }
 
@@ -149,8 +146,7 @@ body {
   background: #fff;
   font-size: 15px;
   line-height: 1.5;
-  font-family: "Roboto", "Noto Sans KR", "Malgun Gothic", "맑은 고딕",
-    sans-serif;
+  font-family: "Roboto", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
 }
 
 /* desktop */
@@ -180,7 +176,7 @@ hr {
   display: none;
 }
 
-input[type="password"] {
+input[type=password] {
   font-family: "Malgun Gothic";
 }
 
@@ -311,7 +307,7 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 #main .part-sec {
   padding-top: 70%;
@@ -429,7 +425,6 @@ legend {
 }
 #main .part-sec img {
   width: 100%;
-  display: block;
 }
 #main .youtube {
   position: relative;
@@ -503,7 +498,7 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 #main .show {
   text-align: center;
@@ -583,7 +578,7 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .item_left .product-img ._pi5 {
   margin-bottom: 0;
@@ -640,7 +635,7 @@ legend {
   height: 100px;
   position: relative;
 }
-.item_color .color-options input[type="radio"] {
+.item_color .color-options input[type=radio] {
   position: absolute;
   top: 0;
   left: 0;
@@ -648,7 +643,7 @@ legend {
   height: 0;
   opacity: 0;
 }
-.item_color .color-options input[type="radio"]:checked + label::after {
+.item_color .color-options input[type=radio]:checked + label::after {
   position: absolute;
   content: " ";
   bottom: -10px;
@@ -675,8 +670,8 @@ legend {
   border: 1px solid #000;
   cursor: pointer;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .item_color .color-options .color-picker label::after {
   position: absolute;
@@ -941,9 +936,9 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-position: 0px -120px;
-  object-position: 0px -120px;
+     object-position: 0px -120px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .cart-wrap .cart_infomation {
   width: 290px;
@@ -976,16 +971,8 @@ legend {
   left: 30%;
   display: flex;
 }
-.cart-wrap
-  .cart_infomation
-  .cart-quantity
-  .__c-q
-  input[type="number"]::-webkit-outer-spin-button,
-.cart-wrap
-  .cart_infomation
-  .cart-quantity
-  .__c-q
-  input[type="number"]::-webkit-inner-spin-button {
+.cart-wrap .cart_infomation .cart-quantity .__c-q input[type=number]::-webkit-outer-spin-button,
+.cart-wrap .cart_infomation .cart-quantity .__c-q input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -1075,7 +1062,7 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 
@@ -1290,7 +1277,7 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 
@@ -1490,6 +1477,135 @@ legend {
 
 .contents {
   height: 300px;
+}
+
+#main .sec-introduce .lst-introduce li {
+  position: relative;
+}
+#main .sec-introduce .lst-introduce img {
+  display: block;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.6;
+}
+#main .sec-introduce .lst-introduce strong {
+  font-size: 48px;
+}
+#main .sec-introduce .lst-introduce .lst1-txt {
+  position: absolute;
+  top: 71%;
+  left: 49%;
+  width: 25.5%;
+}
+#main .sec-introduce .lst-introduce .lst1-txt .txt-shopping__tit {
+  font-family: Libre Baskerville;
+  line-height: 1.2;
+}
+#main .sec-introduce .lst-introduce .lst1-txt .txt-shopping__desc {
+  width: 150%;
+}
+#main .sec-introduce .lst-introduce .lst2-txt {
+  position: absolute;
+  top: 77%;
+  left: 37%;
+}
+#main .sec-introduce .lst-introduce .lst2-txt .txt-shopping__tit {
+  font-family: Libre Baskerville;
+  line-height: 1.2;
+}
+#main .sec-introduce .lst-introduce .lst2-txt .txt-shopping__desc {
+  width: 79%;
+}
+#main .sec-introduce .lst-introduce .lst3-txt {
+  position: absolute;
+  top: 64%;
+  left: 47%;
+  width: 29%;
+}
+#main .sec-introduce .lst-introduce .lst3-txt .txt-shopping__tit {
+  font-family: Libre Baskerville;
+  line-height: 1.2;
+}
+#main .sec-introduce .lst-introduce .lst3-txt .txt-shopping__desc {
+  width: 140%;
+}
+#main .sec-introduce .lst-introduce .lst4-txt {
+  position: absolute;
+  top: 64%;
+  left: 47%;
+  width: 29%;
+}
+#main .sec-introduce .lst-introduce .lst4-txt .txt-shopping__tit {
+  font-family: Libre Baskerville;
+  line-height: 1.2;
+}
+#main .sec-introduce .lst-introduce .lst4-txt .txt-shopping__desc {
+  width: 140%;
+}
+#main .sec-introduce .lst-introduce .lst5-txt {
+  position: absolute;
+  top: 64%;
+  left: 47%;
+  width: 29%;
+}
+#main .sec-introduce .lst-introduce .lst5-txt .txt-shopping__tit {
+  font-family: Libre Baskerville;
+  line-height: 1.2;
+}
+#main .sec-introduce .lst-introduce .lst5-txt .txt-shopping__desc {
+  width: 140%;
+}
+#main .sec-introduce .lst-introduce .lst6-txt {
+  position: absolute;
+  top: 64%;
+  left: 47%;
+  width: 29%;
+}
+#main .sec-introduce .lst-introduce .lst6-txt .txt-shopping__tit {
+  font-family: Libre Baskerville;
+  line-height: 1.2;
+}
+#main .sec-introduce .lst-introduce .lst6-txt .txt-shopping__desc {
+  width: 140%;
+}
+#main .sec-introduce .lst-introduce .lst7-txt {
+  position: absolute;
+  top: 64%;
+  left: 47%;
+  width: 29%;
+}
+#main .sec-introduce .lst-introduce .lst7-txt .txt-shopping__tit {
+  font-family: Libre Baskerville;
+  line-height: 1.2;
+}
+#main .sec-introduce .lst-introduce .lst7-txt .txt-shopping__desc {
+  width: 140%;
+}
+#main .sec-introduce .lst-introduce .lst8-txt {
+  position: absolute;
+  top: 64%;
+  left: 47%;
+  width: 29%;
+}
+#main .sec-introduce .lst-introduce .lst8-txt .txt-shopping__tit {
+  font-family: Libre Baskerville;
+  line-height: 1.2;
+}
+#main .sec-introduce .lst-introduce .lst8-txt .txt-shopping__desc {
+  width: 140%;
+}
+#main .sec-introduce .lst-introduce .lst9-txt {
+  position: absolute;
+  top: 64%;
+  left: 47%;
+  width: 29%;
+}
+#main .sec-introduce .lst-introduce .lst9-txt .txt-shopping__tit {
+  font-family: Libre Baskerville;
+  line-height: 1.2;
+}
+#main .sec-introduce .lst-introduce .lst9-txt .txt-shopping__desc {
+  width: 140%;
 }
 
 .contents {
@@ -1737,4 +1853,4 @@ legend {
   100% {
     transform: translateX(-100%);
   }
-} /*# sourceMappingURL=comm.css.map */
+}/*# sourceMappingURL=comm.css.map */
