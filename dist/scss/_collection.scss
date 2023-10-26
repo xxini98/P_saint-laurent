@@ -162,6 +162,7 @@
       position: absolute;
       top: 260px;
       right: 990px;
+      box-shadow: 12px 6px 10px 0px rgba(0, 0, 0, 0.24);
       img {
         display: block;
         width: 300px;
@@ -259,10 +260,15 @@
         width: 100%;
         display: block;
         object-fit: cover;
-        transition: 0.3s ease-in-out;
+        // -webkit-filter: blur(0);
+        // filter: blur(0);
+        // -webkit-transition: 0.3s ease-in-out;
+        transition: 0.4s ease-in-out;
       }
       img:hover {
         transform: scale(1.05);
+        // -webkit-filter: blur(5px);
+        // filter: blur(5px);
       }
     }
   }
