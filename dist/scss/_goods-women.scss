@@ -20,6 +20,10 @@
     display: block;
   }
 }
+// p {
+//   text-transform: lowercase !important ;
+//   text-transform: capitalize !important ;
+// }
 .goods_lst {
   width: 76%;
   height: 100%;
@@ -149,6 +153,19 @@
         border: 1px solid $w;
         margin-right: 3px;
       }
+      .color_gd {
+        width: 35px;
+        height: 10px;
+        background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(177, 182, 184, 1) 30%,
+          rgba(45, 45, 52, 1) 60%,
+          rgba(0, 0, 0, 1) 100%
+        );
+        border: 1px solid $w;
+        margin-right: 3px;
+      }
     }
   }
   .box2 {
@@ -211,6 +228,7 @@
     width: 100%;
     height: 30vw;
     margin-bottom: 20px;
+
     &:hover {
       .text1 {
         display: flex;

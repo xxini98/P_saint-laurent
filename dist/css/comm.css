@@ -687,6 +687,13 @@ legend {
   border: 1px solid #fff;
   margin-right: 3px;
 }
+.goods_lst .text1 .color .color_gd {
+  width: 35px;
+  height: 10px;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(177, 182, 184) 30%, rgb(45, 45, 52) 60%, rgb(0, 0, 0) 100%);
+  border: 1px solid #fff;
+  margin-right: 3px;
+}
 .goods_lst .box2 {
   display: flex;
   width: 100%;
