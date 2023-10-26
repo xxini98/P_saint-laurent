@@ -1798,8 +1798,357 @@ legend {
   width: 140%;
 }
 
-.contents {
-  height: 300px;
+.wrap-collection {
+  background: #000;
+}
+
+#header {
+  z-index: 100;
+}
+
+.collection-inner {
+  padding-right: 120px;
+  padding-left: 530px;
+}
+
+#collection-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#collection-video .collecion-video-main {
+  display: block;
+}
+#collection-video .collecion-video-main video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.logo-ani {
+  width: 100%;
+}
+.logo-ani .collec-ocean {
+  padding: 20px 20px;
+}
+.logo-ani .collec-ocean {
+  display: block;
+  margin: 0 auto;
+  width: 190px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.logo-ani .li:first-child {
+  position: relative;
+  padding: 5px;
+  color: #000;
+}
+.logo-ani .collec-ocean {
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  margin-bottom: 40px;
+  padding: 0 0;
+  height: 50px;
+  top: 50%;
+  margin-top: 80px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+.logo-ani .collec-wave {
+  background: url(../../images/comm/white/saintlaurent-logo-slide-white.png) repeat-x;
+  position: absolute;
+  z-index: 100;
+  top: 13px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+#collection-intro {
+  position: relative;
+  width: 100%;
+  height: 1500px;
+  background: url(../../images/contents/collection/bg.png) no-repeat 0 0;
+  background-size: cover;
+}
+#collection-intro .collec-gradiant {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2000px;
+  background: linear-gradient(180deg, #000 11.98%, rgba(0, 0, 0, 0.26) 45.31%, rgba(77, 77, 77, 0) 100%);
+}
+#collection-intro .collection-intro-wrap {
+  position: absolute;
+  top: 40%;
+  right: 115px;
+}
+#collection-intro .collection-intro-wrap img {
+  display: block;
+  width: 550px;
+  height: auto;
+  margin-bottom: 62px;
+}
+#collection-intro .collection-intro-wrap .coll-in-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 500px;
+}
+#collection-intro .collection-intro-wrap .coll-in-txt strong {
+  font-weight: 500;
+  color: #fff;
+}
+#collection-intro .collection-intro-wrap .coll-in-txt .coll-by-anthony {
+  margin-bottom: 58px;
+}
+
+#collection-2nd-page {
+  margin-top: 250px;
+  height: 170vh;
+}
+#collection-2nd-page .collec-2nd-page-wrap {
+  position: relative;
+}
+#collection-2nd-page .collec-2nd-page-wrap .collec-2nd-page-img-1 {
+  position: absolute;
+  top: 500px;
+  right: 240px;
+}
+#collection-2nd-page .collec-2nd-page-wrap .collec-2nd-page-img-1 img {
+  display: block;
+  width: 800px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#collection-2nd-page .collec-2nd-page-wrap .collec-2nd-page-img-2 {
+  position: absolute;
+  top: 260px;
+  right: 990px;
+}
+#collection-2nd-page .collec-2nd-page-wrap .collec-2nd-page-img-2 img {
+  display: block;
+  width: 300px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#collection-2nd-page .collec-2nd-page-wrap .collec-2nd-page-txt-1 {
+  position: absolute;
+  top: 280px;
+  right: 290px;
+  width: 650px;
+  height: 200px;
+}
+#collection-2nd-page .collec-2nd-page-wrap .collec-2nd-page-txt-1 p {
+  color: #d9d9d9;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 22px; /* 169.231% */
+  text-transform: uppercase;
+}
+#collection-2nd-page .collec-2nd-page-wrap .collec-2nd-page-txt-2 {
+  position: absolute;
+  top: 1080px;
+  right: 290px;
+  width: 650px;
+  height: 200px;
+}
+#collection-2nd-page .collec-2nd-page-wrap .collec-2nd-page-txt-2 p {
+  color: #d9d9d9;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 22px; /* 169.231% */
+  text-transform: uppercase;
+}
+#collection-2nd-page .collec-2nd-page-wrap .collec-2nd-page-txt-3 {
+  position: absolute;
+  top: 1280px;
+  right: 290px;
+  width: 650px;
+  height: 200px;
+}
+#collection-2nd-page .collec-2nd-page-wrap .collec-2nd-page-txt-3 p {
+  color: #d9d9d9;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 22px; /* 169.231% */
+  text-transform: uppercase;
+}
+#collection-2nd-page .collec-2nd-page-wrap .collec-2nd-page-txt-3 span {
+  color: #d9d9d9;
+  font-family: Libre Baskerville;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+
+#collection-show {
+  width: 1260px;
+  max-width: 1440px;
+  margin-top: 150px;
+}
+#collection-show .collection-show-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#collection-show .collection-show-title p {
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+}
+#collection-show .collection-show-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 20px;
+  overflow: hidden;
+  margin-bottom: 250px;
+}
+#collection-show .collection-show-grid .show-img {
+  overflow: hidden;
+}
+#collection-show .collection-show-grid .show-img img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+#collection-show .collection-show-grid .show-img img:hover {
+  transform: scale(1.05);
+}
+
+#collection-3rd-page {
+  height: 170vh;
+}
+#collection-3rd-page .collection-3rd-page-wrap {
+  position: relative;
+}
+#collection-3rd-page .collection-3rd-page-wrap .collec-3rd-page-img-1 {
+  position: absolute;
+  top: 300px;
+  right: 240px;
+}
+#collection-3rd-page .collection-3rd-page-wrap .collec-3rd-page-img-1 img {
+  display: block;
+  width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#collection-3rd-page .collection-3rd-page-wrap .collec-3rd-page-img-2 {
+  position: absolute;
+  top: 250px;
+  left: 650px;
+}
+#collection-3rd-page .collection-3rd-page-wrap .collec-3rd-page-img-2 img {
+  display: block;
+  width: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#collection-3rd-page .collection-3rd-page-wrap .collec-3rd-page-img-3 {
+  position: absolute;
+  top: 760px;
+  left: 800px;
+}
+#collection-3rd-page .collection-3rd-page-wrap .collec-3rd-page-img-3 img {
+  display: block;
+  width: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#collection-3rd-page .collection-3rd-page-wrap .collec-3rd-page-txt-1 {
+  position: absolute;
+  top: 630px;
+  left: 800px;
+  width: 430px;
+  height: 56px;
+}
+#collection-3rd-page .collection-3rd-page-wrap .collec-3rd-page-txt-1 p {
+  color: #d9d9d9;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+#collection-3rd-page .collection-3rd-page-wrap .collec-3rd-page-txt-1 span {
+  color: #d9d9d9;
+  font-family: Libre Baskerville;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+#collection-3rd-page .collection-3rd-page-wrap .collec-3rd-page-txt-2 {
+  position: absolute;
+  top: 800px;
+  right: 240px;
+  width: 340px;
+  height: 56px;
+}
+#collection-3rd-page .collection-3rd-page-wrap .collec-3rd-page-txt-2 p {
+  color: #d9d9d9;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+#collection-3rd-page .collection-3rd-page-wrap .collec-3rd-page-txt-2 span {
+  color: #d9d9d9;
+  font-family: Libre Baskerville;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: capitalize;
 }
 
 .contents {
@@ -2043,10 +2392,6 @@ legend {
   100% {
     transform: translateX(-100%);
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-} /*# sourceMappingURL=comm.css.map */
-=======
 }
 
 ::-webkit-scrollbar-track {
@@ -2062,7 +2407,3 @@ legend {
 ::-webkit-scrollbar-thumb {
   background-color: #000000;
 }/*# sourceMappingURL=comm.css.map */
->>>>>>> cart
-=======
-}/*# sourceMappingURL=comm.css.map */
->>>>>>> pr/artnook/8
