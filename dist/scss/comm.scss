@@ -124,6 +124,7 @@
 
   .depth2 {
     display: none;
+    white-space: nowrap;
     a {
       &:hover {
         font-weight: bold;
