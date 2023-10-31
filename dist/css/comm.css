@@ -322,7 +322,7 @@ legend {
 #main .part-sec .women a {
   display: block;
 }
-#main .part-sec .women::after {
+#main .part-sec .women a::after {
   display: none;
   position: absolute;
   content: "";
@@ -334,7 +334,7 @@ legend {
   opacity: 0.9;
   background-color: rgba(255, 255, 255, 0.5);
 }
-#main .part-sec .women:hover::after {
+#main .part-sec .women a:hover::after {
   display: block;
   content: "WOMEN";
   color: #000;
@@ -348,7 +348,10 @@ legend {
 #main .part-sec .man {
   position: relative;
 }
-#main .part-sec .man::after {
+#main .part-sec .man a {
+  display: block;
+}
+#main .part-sec .man a::after {
   display: none;
   position: absolute;
   content: "";
@@ -360,7 +363,7 @@ legend {
   opacity: 0.9;
   background-color: rgba(255, 255, 255, 0.5);
 }
-#main .part-sec .man:hover::after {
+#main .part-sec .man a:hover::after {
   display: block;
   content: "MAN";
   color: #000;
@@ -400,7 +403,10 @@ legend {
 #main .part-sec .introduce {
   position: relative;
 }
-#main .part-sec .introduce::after {
+#main .part-sec .introduce a {
+  display: block;
+}
+#main .part-sec .introduce a::after {
   display: none;
   position: absolute;
   content: "";
@@ -412,7 +418,7 @@ legend {
   opacity: 0.9;
   background-color: rgba(255, 255, 255, 0.8);
 }
-#main .part-sec .introduce:hover::after {
+#main .part-sec .introduce a:hover::after {
   display: block;
   content: "INTRODUCE";
   color: #000;
@@ -924,15 +930,17 @@ legend {
   margin-bottom: 40px;
 }
 
-.cart-wrap {
+.cart-wraps {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
-.cart-wrap .cart_img {
+.cart-wraps .cart_img {
   width: 180px;
   height: 180px;
 }
-.cart-wrap .cart_img img {
+.cart-wraps .cart_img img {
   width: 100%;
   height: 100%;
   -o-object-position: 0px -120px;
@@ -940,50 +948,50 @@ legend {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.cart-wrap .cart_infomation {
+.cart-wraps .cart_infomation {
   width: 290px;
   color: #fff;
 }
-.cart-wrap .cart_infomation ._cti {
+.cart-wraps .cart_infomation ._cti {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
 }
-.cart-wrap .cart_infomation .__nametag {
+.cart-wraps .cart_infomation .__nametag {
   width: 70%;
   font-weight: bold;
   font-size: 16px;
 }
-.cart-wrap .cart_infomation .__nameprice {
+.cart-wraps .cart_infomation .__nameprice {
   width: 40%;
   font-weight: bold;
   font-size: 16px;
 }
-.cart-wrap .cart_infomation .__cedit {
+.cart-wraps .cart_infomation .__cedit {
   border-bottom: 1px solid #fff;
 }
-.cart-wrap .cart_infomation .cart-quantity {
+.cart-wraps .cart_infomation .cart-quantity {
   position: relative;
 }
-.cart-wrap .cart_infomation .cart-quantity .__c-q {
+.cart-wraps .cart_infomation .cart-quantity .__c-q {
   position: absolute;
   top: -2px;
   left: 30%;
   display: flex;
 }
-.cart-wrap .cart_infomation .cart-quantity .__c-q input[type=number]::-webkit-outer-spin-button,
-.cart-wrap .cart_infomation .cart-quantity .__c-q input[type=number]::-webkit-inner-spin-button {
+.cart-wraps .cart_infomation .cart-quantity .__c-q input[type=number]::-webkit-outer-spin-button,
+.cart-wraps .cart_infomation .cart-quantity .__c-q input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.cart-wrap .cart_infomation .cart-quantity .__c-q #cart-num {
+.cart-wraps .cart_infomation .cart-quantity .__c-q #cart-num {
   width: 15px;
   color: #fff;
   font-size: 20px;
   background: transparent;
   border: none;
 }
-.cart-wrap .cart_infomation .cart-quantity .__cremove {
+.cart-wraps .cart_infomation .cart-quantity .__cremove {
   border-bottom: 1px solid #fff;
 }
 
@@ -2292,6 +2300,7 @@ legend {
 }
 #gnb .depth2 {
   display: none;
+  white-space: nowrap;
 }
 #gnb .depth2 a:hover {
   font-weight: bold;
